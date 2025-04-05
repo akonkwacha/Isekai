@@ -1,137 +1,606 @@
 <!DOCTYPE html>
-<html lang="en">
-	 <head>
-			<title>✰JAC-TEC 𝘼𝙄-𝘼𝙐𝙏𝙊𝘽𝙊𝙏</title>
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-			<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<link rel="stylesheet" href="styles.css">
-	 </head>
-	 <body>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				 <a class="navbar-brand" href="#">JAC-TECH [🔴]𝘼𝙐𝙏𝙊-𝗕𝗢𝗧◆</a>
-				 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				 <span class="navbar-toggler-icon"></span>
-				 </button>
-				 <div class="collapse navbar-collapse justify-content-end" id="navbarNav" style="margin-right: 70px;">
-						<ul class="navbar-nav">
-							 <li class="nav-item active">
-									<a class="nav-link" href="/">Home <span class="sr-only">(current)</span>
-									</a>
-							 </li>
-							 <li class="nav-item dropdown">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Features </a>
-									<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-										 <a class="dropdown-item" href="#">Cookies Extractor</a>
-										 <div class="dropdown-divider"></div>
-										 <a class="dropdown-item" href="/step_by_step_guide">Step-by-Step Guide</a>
-							    </div>
-               </li>
-               <li class="nav-item">
-                  <a class="nav-link" href="online_user"> 𝗔𝗖𝗧𝗜𝗩𝗘 [✅]</a>
-               </li>
-              <li class="nav-item">
-                  
-              
-							
-              
-              
-							<li class="nav-item">
-              <a class="nav-link" href="/time">𝘁𝗶𝗺𝗲</a
-							</li>
-							<li class="nav-item">
-              <a class="nav-link" href="/analog">analogClock</a>
-									</li>
-							<li class="nav-item">
-                  <a class="nav-link" href="/random">randomQuotes</a>
-            </ul>
-         </div>
-			</nav>
-			<div class="container">
-				 <h1 class="col text-center" style="font-size: 20px; padding: 10px;"> 𝗙𝗕-𝗦𝗧𝗔𝗧𝗘 ⬣</h1>
-				 <form id="json-form" onsubmit="submitForm(event)">
-						<div class="row">
-							 <div class="col-md-12">
-									<textarea id="json-data" class="form-control centered-textarea center-placeholder" placeholder=""></textarea>
-							 </div>
-						</div>
-				 </form>
-				 <p style=" margin-top: 10px; color: #FFFFFF">𝘐𝘤𝘪 𝘷𝘦𝘪𝘭𝘭𝘦𝘻 𝘱𝘭𝘢𝘤𝘦́ 𝘭𝘦 𝘤𝘰𝘰𝘬𝘪𝘦 𝘥𝘶 𝘤𝘰𝘮𝘱𝘵𝘦 𝘍𝘢𝘤𝘦𝘣𝘰𝘰𝘬 𝘢 𝘶𝘵𝘪𝘭𝘪𝘴𝘦́ 𝘱𝘰𝘶𝘳 l'auto-entrepreneur✰</p>
-			</div>
-			<div class="container">
-			    <h1 class="col text-center" style="font-size: 20px; padding: 10px;">𝙇𝙀𝙎 𝙄𝙉𝙁𝙊𝙍𝙈𝘼𝙏𝙄𝙊𝙉 𝘿𝙐 𝘾𝙍𝙀́𝘼𝙏𝙀𝙐𝙍 𝘿𝙐 𝙎𝙄𝙏𝙀 JAC-TECH 𝘼𝙄 𝘼𝙐𝙏𝙊-𝘽𝙊𝙏[💬]</h1>        
-<a href="https://www.facebook.com/merdi.madimba.39" target="_blank">
-   <button type="button">JOTOBOT [🔵]</button>
-</a>
-
-				  <div class="container" id="listOfCommands">
-						<h1 style="font-size: 16px; padding: 10px;">𝘾𝙃𝙊𝙄𝙎𝙄𝙎𝙎𝙀𝙕 𝙇𝙀𝙎 𝘾𝙊𝙈𝙈𝘼𝙉𝘿𝙀𝙎 𝙋𝙊𝙐𝙍 𝙑𝙊𝙏𝙍𝙀 𝘼𝙐𝙏𝙊-𝘽𝙊𝙏[🗃]</h1>
-						<button class="btn btn-primary" onclick="selectAllCommands()">Select all commands</button>
-				 </div>
-				 <div class="container" id="listOfCommandsEvent">
-						<h1 style="font-size: 16px; padding: 10px;">𝗖𝗛𝗢𝗢𝗦𝗘 𝗬𝗢𝗨𝗥 𝗘𝗩𝗘𝗡𝗧 𝗖𝗠𝗗's [📝]</h1>
-						<button class="btn btn-primary" onclick="selectAllEvents()">Select all events</button>
-				 </div>
-				 <div class="container" id="prefixOfCommands">
-						<h1 style="font-size: 16px; padding: 10px;">𝗘𝗡𝗧𝙍𝙀𝙕 𝙇𝙀 𝙋𝙍𝙀𝙁𝙄𝙓[🔖] ⬇</h1>
-						<input type="text" id="inputOfPrefix">
-				 </div>
-				 <div class="container" id="adminOfCommands">
-						<h1 style="font-size: 16px; padding: 10px;">𝗘𝗡𝗧𝙍𝙀𝙕 𝙑𝙊𝙏𝙍𝙀 𝙐𝙄𝘿[🌟]</h1>
-						<input type="text" id="inputOfAdmin">
-				 </div>
-				 <label style="font-size: 14px; display: flex; align-items: center; padding: 22px;">
-				 <input type="checkbox" id="agreeCheckbox" style="color: #FFF; margin-right: 10px;"> Checking this box certifies that I have read, understood, and agreed to the Terms and Conditions. </label>
-				 <div class="col text-center">
-						<button class="btn btn-primary" onclick="State()" disabled id="submitButton" style="width: 100%"> ‹𝗦𝗨𝗕𝗠𝗜𝗧› </button>
-				 </div>
-			</div>
-			<div id="result" class="container text-center" style="display: none;"></div>
-			<div class="footer">
-				 <p>Time: <span id="time"></span>
-				 </p>
-				 <p>Ping: <span id="ping"></span>
-				 </p>
-			</div>
-			<script src="script.js"></script>
-			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
-	 </body>
-</html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JAC-TEC | Innovation & Technologie</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #1a2a6c;
+      --secondary-color: #fdbb2d;
+      --text-color: #333;
+      --bg-color: #fff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: var(--text-color);
+      background: var(--bg-color);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    /* Préchargeur */
+    #preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: var(--primary-color);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+    }
+    #preloader .spinner {
+      border: 8px solid #f3f3f3;
+      border-top: 8px solid var(--secondary-color);
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    /* Navigation */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.85);
+      padding: 10px 0;
+      z-index: 1000;
+      transition: background 0.3s ease;
+    }
+    nav.sticky {
+      background: rgba(0, 0, 0, 0.95);
+    }
+    nav .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1200px;
+      margin: auto;
+      padding: 0 20px;
+    }
+    nav .logo {
+      font-size: 1.3em;
+      font-weight: bold;
+      color: #fff;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin-left:5px;
+    }
+    nav ul li a {
+      color: #fff;
+      font-weight: 500;
+      transition: color 0.3s ease;
+      padding:8px;
+      
+    }
+    nav ul li a.active,
+    nav ul li a:hover {
+      color: var(--secondary-color);
+    }
+    /* Header avec effet parallax */
+    header {
+      height: 90vh;
+      background: url('file:///storage/emulated/0/Ir Ricardo/joto.jpg') no-repeat center center/cover;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    header::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+    }
+    header .header-content {
+      position: relative;
+      z-index: 1;
+      animation: fadeIn 2s ease-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    header h1 {
+    
+      font-size: 3.5em;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    header .cta-btn {
+      background: var(--secondary-color);
+      color: var(--primary-color);
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    header .cta-btn:hover {
+      background: #e0a102;
+    }
+    /* Conteneur principal */
+    .container {
+      max-width: 1200px;
+      margin: 120px auto 40px;
+      padding: 0 20px;
+    }
+    /* Sections */
+    section {
+      padding: 40px 0;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.8em;
+      position: relative;
+      animation: fadeIn 1.5s ease-out;
+    }
+    section h2::after {
+      content: '';
+      width: 100px;
+      height: 4px;
+      background: var(--secondary-color);
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -10px;
+      border-radius: 2px;
+    }
+    /* Grille des cartes */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+    }
+    .card {
+      background: var(--bg-color);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    .card.show {
+      opacity: 1;
+      transform: translateY(0);
+      transition: transform 0.6s ease, opacity 0.6s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+    }
+    .card-content {
+      padding: 20px;
+    }
+    .card-content h3 {
+      margin-bottom: 10px;
+      font-size: 1.6em;
+      color: var(--primary-color);
+    }
+    .card-content p {
+      font-size: 1em;
+      color: #666;
+    }
+    /* Section Téléchargement */
+    .download-section {
+      background: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      padding: 80px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      position: relative;
+      overflow: hidden;
+    }
+    .download-section h2 {
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+    }
+    .download-section p {
+      margin-bottom: 30px;
+      font-size: 1.2em;
+    }
+    .download-btn {
+      background: var(--secondary-color);
+      color: var(--primary-color);
+      padding: 15px 40px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .download-btn:hover {
+      background: #e0a102;
+    }
+    /* Modal pour QR code */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 2000;
+    }
+    .modal-content {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+      max-width: 90%;
+      width: 400px;
+    }
+    .modal-content h3 {
+      margin-bottom: 20px;
+      color: var(--primary-color);
+    }
+    .modal-content img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+    }
+    .modal-content a {
+      display: block;
+      margin-top: 20px;
+      color: var(--secondary-color);
+      font-weight: bold;
+    }
+    .modal-close {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 1.5em;
+      cursor: pointer;
+      color: #666;
+    }
+    /* Section Contact */
+    .contact-section {
+      background: #f7f7f7;
+      padding: 60px 20px;
+    }
+    .contact-section h2 {
+      margin-bottom: 40px;
+      color: var(--primary-color);
+    }
+    .contact-form {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .contact-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-form button {
+      background: var(--primary-color);
+      color: #fff;
+      padding: 15px 30px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-size: 1em;
+    }
+    .contact-form button:hover {
+      background: #0f1a48;
+    }
+    /* Footer */
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    footer p {
+      font-size: 0.9em;
+    }
+    footer .social-links {
+      margin-top: 10px;
+    }
+    footer .social-links a {
+      margin: 0 10px;
+      color: #fff;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+    footer .social-links a:hover {
+      color: var(--secondary-color);
+    }
+    /* Responsive */
+    @media(max-width:768px) {
+      header h1 {
+        font-size: 2.8em;
+      }
+      nav .container {
+        flex-direction: column;
+      }
+      nav ul {
+        margin-top: 10px;
+      }
+    }
+    .header-content{
+        font-size:12px;
+    }
+  </style>
+</head>
 <body>
-	</style>
-	<div style="font-size: 25px">
-	<script type="text/javascript">
-	farbbibliothek = new Array();
-	farbbibliothek[0] = new Array("#FF0000","#FF1100","#FF2200","#FF3300","#FF4400","#FF5500","#FF6600","#FF7700","#FF8800","#FF9900","#FFaa00","#FFbb00","#FFcc00","#FFdd00","#FFee00","#FFff00","#FFee00","#FFdd00","#FFcc00","#FFbb00","#FFaa00","#FF9900","#FF8800","#FF7700","#FF6600","#FF5500","#FF4400","#FF3300","#FF2200","#FF1100");
-	farbbibliothek[1] = new Array("#00FF00","#000000","#00FF00","#00FF00");
-	farbbibliothek[2] = new Array("#00FF00","#FF0000","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00","#00FF00");
-	farbbibliothek[3] = new Array("#FF0000","#FF4000","#FF8000","#FFC000","#FFFF00","#C0FF00","#80FF00","#40FF00","#00FF00","#00FF40","#00FF80","#00FFC0","#00FFFF","#00C0FF","#0080FF","#0040FF","#0000FF","#4000FF","#8000FF","#C000FF","#FF00FF","#FF00C0","#FF0080","#FF0040");
-	farbbibliothek[4] = new Array("#FF0000","#EE0000","#DD0000","#CC0000","#BB0000","#AA0000","#990000","#880000","#770000","#660000","#550000","#440000","#330000","#220000","#110000","#000000","#110000","#220000","#330000","#440000","#550000","#660000","#770000","#880000","#990000","#AA0000","#BB0000","#CC0000","#DD0000","#EE0000");
-	farbbibliothek[5] = new Array("#000000","#000000","#000000","#FFFFFF","#FFFFFF","#FFFFFF");
-	farbbibliothek[6] = new Array("#0000FF","#FFFF00");
-	farben = farbbibliothek[4];
-	function farbschrift(){for(var b=0;b<Buchstabe.length;b++){document.all["a"+b].style.color=farben[b]}farbverlauf()}function string2array(b){Buchstabe=new Array();while(farben.length<b.length){farben=farben.concat(farben)}k=0;while(k<=b.length){Buchstabe[k]=b.charAt(k);k++}}function divserzeugen(){for(var b=0;b<Buchstabe.length;b++){document.write("<span id='a"+b+"' class='a"+b+"'>"+Buchstabe[b]+"</span>")}farbschrift()}var a=1;function farbverlauf(){for(var b=0;b<farben.length;b++){farben[b-1]=farben[b]}farben[farben.length-1]=farben[-1];setTimeout("farbschrift()",30)}var farbsatz=1;function farbtauscher(){farben=farbbibliothek[farbsatz];while(farben.length<text.length){farben=farben.concat(farben)}farbsatz=Math.floor(Math.random()*(farbbibliothek.length-0.0001))}setInterval("farbtauscher()",5000);
+  <!-- Préchargeur -->
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
 
-	text=
-	
-	string2array(text);
-	divserzeugen();
-	//document.write(text);
-	</script></div>
-	<p id='name'>
-	<script></script>
+  <!-- Navigation -->
+  <nav id="navbar">
+    <div class="container">
+      <div class="logo">JAC-TEC</div>
+      <ul>
+        <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+        <li><a href="#produits" class="nav-link">Produits</a></li>
+        <li><a href="#formations" class="nav-link">Formations</a></li>
+        <li><a href="#application" class="nav-link">Télécharger</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <!-- Header avec effet parallax -->
+  <header id="accueil">
+    <div class="header-content">
+      <h1>Innovation Technologique Au Service du Futur</h1>
+      <p>Découvrez les technologies de demain, aujourd'hui.</p>
+      <button class="cta-btn" onclick="scrollToSection('produits')">En savoir plus</button>
+    </div>
+  </header>
 
+  <div class="container">
+    <!-- Section Produits -->
+    <section id="produits">
+      <h2>Nos Produits</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="joto.jpg" alt="Produit Innovant 1">
+          <div class="card-content">
+            <h3>Produit Innovant 1</h3>
+            <p>Une solution de pointe pour révolutionner votre quotidien.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/produit2.jpg" alt="Produit Innovant 2">
+          <div class="card-content">
+            <h3>Produit Innovant 2</h3>
+            <p>Design et performance réunis pour un impact maximal.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/produit3.jpg" alt="Produit Innovant 3">
+          <div class="card-content">
+            <h3>Produit Innovant 3</h3>
+            <p>La technologie de demain, disponible aujourd'hui.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<body>
-		<div class="wrapper">
-				<div class="display"
-				</div>
-				<span></span>
-				<span></span>
-		</div>
-		<script src="./index.js"></script>
+    <!-- Section Formations -->
+    <section id="formations">
+      <h2>Nos Formations</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="images/formation1.jpg" alt="Formation Avancée 1">
+          <div class="card-content">
+            <h3>Formation Avancée 1</h3>
+            <p>Approfondissez vos compétences en technologies émergentes.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/formation2.jpg" alt="Formation Avancée 2">
+          <div class="card-content">
+            <h3>Formation Avancée 2</h3>
+            <p>Maîtrisez les outils de l’innovation moderne.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="images/formation3.jpg" alt="Formation Avancée 3">
+          <div class="card-content">
+            <h3>Formation Avancée 3</h3>
+            <p>Boostez votre carrière avec des compétences de haut niveau.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Téléchargement -->
+    <section id="application">
+      <div class="download-section">
+        <h2>Téléchargez notre Application</h2>
+        <p>Accédez à toutes nos fonctionnalités sur votre mobile.</p>
+        <button class="download-btn" id="downloadApp">Télécharger l'Application</button>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="contact-section">
+      <h2>Contactez-nous</h2>
+      <div class="contact-form">
+        <form id="contactForm" action="#" method="post">
+          <label for="name">Nom :</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" placeholder="Votre email" required>
+          <label for="message">Message :</label>
+          <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+  </div>
+
+  <!-- Modal QR Code -->
+  <div class="modal" id="qrModal">
+    <div class="modal-content">
+      <span class="modal-close" id="closeModal">&times;</span>
+      <h3>Scannez le QR Code pour Télécharger</h3>
+      <!-- Remplacez 'images/qr-code.png' par l'image réelle de votre QR Code pointant vers le fichier -->
+      <img src="images/qr-code.png" alt="QR Code de téléchargement">
+      <a href="JAC-TEC-app.apk" download>Ou cliquez ici pour télécharger</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 JAC-TEC. Tous droits réservés.</p>
+    <div class="social-links">
+      <a href="#" title="Facebook">FB</a>
+      <a href="#" title="Twitter">TW</a>
+      <a href="#" title="LinkedIn">LI</a>
+      <a href="#" title="Instagram">IG</a>
+    </div>
+  </footer>
+
+  <script>
+    // Préchargeur
+    window.addEventListener('load', function() {
+      const preloader = document.getElementById('preloader');
+      preloader.style.opacity = '0';
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 500);
+    });
+
+    // Fonction de défilement fluide
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Surlignage de la navigation avec Intersection Observer
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.6
+    };
+    const observerCallback = (entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if(link.getAttribute('href').substring(1) === entry.target.id) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+    };
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    sections.forEach(section => observer.observe(section));
+
+    // Détection d'appareil mobile
+    function isMobile() {
+      return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+    
+    // Gestion du bouton téléchargement
+    document.getElementById('downloadApp').addEventListener('click', function() {
+      if(isMobile()){
+        // Si mobile, téléchargement direct avec l'attribut download
+        const link = document.createElement('a');
+        link.href = "JAC-TEC-app.apk";  // Mettez ici le chemin vers votre fichier d'application
+        link.download = "JAC-TEC-app.apk";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      } else {
+        // Si non-mobile, afficher le modal avec QR code
+        document.getElementById('qrModal').style.display = 'flex';
+      }
+    });
+
+    // Fermeture du modal
+    document.getElementById('closeModal').addEventListener('click', function() {
+      document.getElementById('qrModal').style.display = 'none';
+    });
+    // Fermer le modal en cliquant en dehors du contenu
+    window.addEventListener('click', function(e) {
+      if(e.target == document.getElementById('qrModal')){
+        document.getElementById('qrModal').style.display = 'none';
+      }
+    });
+
+    // Animation d'apparition des cartes au scroll
+    const cards = document.querySelectorAll('.card');
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        if(cardTop < triggerBottom) {
+          card.classList.add('show');
+        }
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+
+    // Simulation de soumission du formulaire de contact
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert("Merci de nous avoir contactés. Nous vous répondrons sous peu.");
+      this.reset();
+    });
+  </script>
+</body>
+	</html>
